@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sistema de gestión Hospitalaria - Inicio de Sesión</title> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    <!-- 
+	Workforce Template
+	http://www.templatemo.com/free-website-templates/461-workforce
+    -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+
+<!-- 
+	PolyFil para uso de input date
+    -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		  <meta charset="utf-8">
+		  <title>JS Bin</title>
+		  <script src="http://cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+		<script>
+		    webshims.setOptions('forms-ext', {types: 'date'});
+		webshims.polyfill('forms forms-ext');
+		</script>
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+	</div>
+	<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" class="smoothScroll">Inicio</a></li>
+					<li><a href="#portfolio" class="smoothScroll">Servicios</a></li>
+					<li><a href="#about" class="smoothScroll">Contacto</a></li>
+				    <!--Registro debe ser habilitado al interior del menú de inicio de sesión-->
+					<li><a href="#service" class="smoothScroll">Iniciar sesión &#9658;</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section>
+	<div class="divider-login">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="divider-des">
+					    <p><br><br> <br> <br></p>
+						<h3 class="text-uppercase">La mejor manera de agendar y editar citas</h3>
+						<p>Fácil de usar, innovadora y accesible.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">Seleccione Especialidad</h2>
+						<hr>
+						<select name="" id="input" class="form-control">
+							<option value="pediatria">Pediatría</option>
+							  	<option value="saab">Saab</option>
+							  	<option value="mercedes">Mercedes</option>
+							  	<option value="audi">Audi</option>
+						</select>
+					</div>					
+					<form action="#" method="post" role="form">
+						<h1>Disponibilidad</h1>
+						<div class="row">
+							<div class=" col-sm-offset-4 col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+								<input type="date" placeholder="Escoja La Fecha" class="form-control">
+							</div>
+							<div class=" col-md-4 col-sm-4" data-wow-delay="0.3s">
+								<input type="button" class="btn-info " value="Buscar">
+							</div>
+						</div>
+						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+							<input type="submit" value="Pedir Cita" class="form-control">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-icon wow fadeIn" data-wow-delay="0.3s">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-instagram"></a></li>
+					</ul>
+					<p class="wow bounceIn">Copyright &copy; <span>Summer</span> 2084 | Design: template<span>mo</span>.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

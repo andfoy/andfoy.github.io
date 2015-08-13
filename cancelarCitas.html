@@ -21,6 +21,28 @@
 		<script src="js/smoothscroll.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.js"></script>
+		<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" class="smoothScroll">Inicio</a></li>
+					<li><a href="pedirCita.html" class="smoothScroll">Agendar Citas</a></li>
+					<li><a href="editarCitas.html" class="smoothScroll">Editar Citas</a></li>
+					<li><a href="historialCitas.html" class="smoothScroll">Ver Historial </a></li>
+					<li><a href="buzonPaciente.html" class="smoothScroll">Ver Mensajes </a></li>
+				</ul> 
+				<!-- Voy a migrar el header a otro archivo -->
+			</div>
+		</div>
+	</nav>
 		<script>
 		$(function()
 		{
@@ -28,6 +50,7 @@
 			$("#footer").load("main_files/footer.html");
 		});
 		</script>
+
 
 <!-- 
 	PolyFil para uso de input date
