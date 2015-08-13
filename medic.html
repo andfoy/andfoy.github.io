@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema de gestión Hospitalaria - Sesión de Médico</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/locales/bootstrap-datepicker.es.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script>
+				$(function()
+				{
+					$("#header").load("main_files/header.html");
+					$("#footer").load("main_files/footer.html");
+				});
+		</script>
+		
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+		<!-- <div class="preloader">
+											<div class="sk-spinner sk-spinner-rotating-plane"></div>
+		</div> -->
+		<div id="header"></div>
+		<section>
+			<div class="divider-login">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="divider-des">
+								<p><br><br> <br> <br></p>
+								<h3 class="text" style="text-align:center">Médico conectado: José Rodriguez</h3>
+								<p>Bienvenido al sistema de manejo de citas</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="citasAgendadas">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="wow bounceIn">
+							<h2 class="wow bounceIn">Citas Agendadas</h2>
+							<hr>
+							<p>Citas:</p>
+						</div>
+						<div class="row">
+							<div class='col-sm-6'>
+								<div class="form-group">
+									<div class='input-group date' id='datetimepicker1'>
+										<input type='text' class="form-control" />
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+								<!-- Esperen un momento, debo solucionar un par de problemas! -->
+							</div>
+							<script type="text/javascript">
+							$(function () {
+							$('#datetimepicker1').datetimepicker();
+							});
+							</script>
+						</div>
+						<br>
+						<button type="button" >Consultar Citas Agendadas</button>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class = 'wow bounceIn'>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Fecha</th>
+										<th>Nombre del paciente</th>
+										<th>Consultorio</th>
+										<th>Estado de la cita</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td> 18 enero 2016</td>
+										<td>Ruperto Aparicio</td>
+										<td> C-201</td>
+										<td> Cancelada</td>
+									</tr>
+									<tr>
+										<td> 2 septiempre 2015</td>
+										<td>Judith Hernandez</td>
+										<td> C-505</td>
+										<td> Finalizada</td>
+									</tr>
+									<tr>
+										<td> 28 agosto 2016</td>
+										<td>Julio Lopez</td>
+										<td> C-402</td>
+										<td> Finalizada</td>
+									</tr>
+									<tr>
+										<td> 29 mayo 2017</td>
+										<td>Adriana Pérez</td>
+										<td> C-302</td>
+										<td> Cancelada</td>
+									</tr>
+									<tr>
+										<td> 22 septiembre 2015</td>
+										<td>José Lopera</td>
+										<td> C-204</td>
+										<td> Programada</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<br><br>
+					</form>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+	</div>
+</section>
+<section id="mensajes">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wow bounceIn">
+					<h2 class="wow bounceIn">Buzón de Mensajes</h2>
+					<hr>
+					<p>Mensajes Disponibles:</p>
+				</div>
+				<br>
+				<br>
+				<!-- Les recomiendo que el valor del atritubto value sea de la forma:
+				update_inbox -->
+				<input type='button' name='boton' value='Update Inbox' style='width:250px; height:35px'>
+				<br>
+				<br>
+				<br>
+				<br>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Fecha</th>
+							<th>Remitente</th>
+							<th>Titulo</th>
+							<th>Importancia</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 18 enero 2016</td>
+							<td>Ruperto Aparicio</td>
+							<td> Ardor en el ojo</td>
+							<td> Alta</td>
+						</tr>
+						<tr>
+							<td> 2 septiempre 2015</td>
+							<td>Judith Hernandez</td>
+							<td> Pastillas</td>
+							<td> Media</td>
+						</tr>
+						<tr>
+							<td> 28 agosto 2016</td>
+							<td>Julio Lopez</td>
+							<td> Orina de color</td>
+							<td> Baja</td>
+						</tr>
+						<tr>
+							<td> 29 mayo 2017</td>
+							<td>Adriana Pérez</td>
+							<td> Tos con sangre</td>
+							<td> Alta</td>
+						</tr>
+						<tr>
+							<td> 22 septiembre 2015</td>
+							<td>José Lopera</td>
+							<td> Dieta</td>
+							<td> Baja</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="perfil">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wow bounceIn">
+					<h2 class="wow bounceIn">Perfil</h2>
+					<hr>
+					<p>Información de usuario:</p>
+				</div>
+				<form action="#" method="post" role="form">
+					<form action="#" method="post" role="form">
+						<div class="col-md-12 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="José" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-5 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="Rodriguez" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-20 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="19229789" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-4 wow fadeIn" data-wow-delay="0.9s">
+							<input type="text" placeholder="Neurocirujía" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+							<input type="email" placeholder="joro@papitas.com" class="form-control">
+						</div>
+						<br>
+						<br>
+						<br>
+						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+							<input type="submit" value="Editar Perfil" class="form-control">
+						</div>
+					</form>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+<br>
+<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sistema de gestión Hospitalaria - Inicio de Sesión</title> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+		$(function()
+		{
+			$("#header").load("main_files/header.html");
+			$("#footer").load("main_files/footer.html");
+		});
+		</script>
+
+<!-- 
+	PolyFil para uso de input date
+    -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		  <meta charset="utf-8">
+		  <title>JS Bin</title>
+		  <script src="http://cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+		<script>
+		    webshims.setOptions('forms-ext', {types: 'date'});
+		webshims.polyfill('forms forms-ext');
+		</script>
+
+<!-- 
+	Funcion que busca las citas disponibles dada la fecha
+    -->
+		<script type="text/javascript" charset="utf-8">
+
+			function buscarCitas(event)
+			{
+				var especialidad = document.getElementById("especialidad").value;
+				var fecha = document.getElementById("laFecha").value;
+				document.getElementById("tituloTabla").innerHTML = "Citas Disponibles en "+fecha;
+
+				console.log("Especialidad: "+especialidad+" con Fecha: "+fecha);
+
+				if(fecha != "")
+					document.getElementById("tabla").style.display = 'block';
+
+			}
+		</script>
+
+		<!-- 
+	Funcion que escoje el boton de la cita
+    -->
+		<script type="text/javascript" charset="utf-8">
+
+			function escojerCita(event)
+			{
+				$(this).removeClass("btn-default");
+				event.target.classList.add("active");
+				event.target.classList.add("btn-success");
+				event.target.value = "Seleccionada"
+			}
+		</script>
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+	</div>
+	<div id="header"></div>
+	<section>
+	<div class="divider-login">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="divider-des">
+					    <p><br><br> <br> <br></p>
+						<h3 class="text-uppercase">La mejor manera de agendar y editar citas</h3>
+						<p>Fácil de usar, innovadora y accesible.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">Seleccione Especialidad</h2>
+						<hr>
+						<select name="" id="especialidad" class="form-control">
+							<option value="pediatria">Pediatría</option>
+							  	<option value="saab">Saab</option>
+							  	<option value="mercedes">Mercedes</option>
+							  	<option value="audi">Audi</option>
+						</select>
+					</div>					
+					<form action="#" method="post" role="form">
+						<h1>Disponibilidad</h1>
+						<div class="row">
+							<div class=" col-sm-offset-4 col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+								<input type="date" placeholder="Escoja La Fecha" class="form-control" id="laFecha">
+							</div>
+							<div class=" col-md-4 col-sm-4" data-wow-delay="0.3s">
+								<input type="button" class="btn-primary " value="Buscar" onclick="buscarCitas(event)">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.3s" id="tabla" style="display: none">
+								<table style="width:100%">
+									<caption id="tituloTabla">Citas Disponibles en </caption>
+									<thead>
+										<tr>
+											<th style="width:40%">Médico</th>
+											<th style="width:30%">Hora</th>
+											<th style="width:20%">Seleccionar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>data</td>
+											<td>data</td>
+											<td><input type="button" class="btn btn-default" value="Escojer"onclick="escojerCita(event)"></td>
+										</tr>
+										<tr>
+											<td>data</td>
+											<td>data</td>
+											<td><input type="button" class="btn btn-default " value="Escojer" onclick="escojerCita(event)"></td>
+										</tr>
+										<tr>
+											<td>data</td>
+											<td>data</td>
+											<td><input type="button" class="btn btn-default " value="Escojer" onclick="escojerCita(event)"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<hr>
+						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+							<input type="submit" value="Pedir Cita" class="form-control">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="footer"></div>
+</body>
+</html>

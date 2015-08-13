@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Inicio de Sesión</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+		$(function()
+		{
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+		</script>
+		<script type="text/javascript">
+		// Wait for the page to load first
+		window.onload = function()
+		{
+			//Get a reference to the link on the page
+			// with an id of "mylink"
+			var a = document.getElementById("mylink");
+			var a2 = document.getElementById("tac");
+			//Set code to run when the link is clicked
+			// by assigning a function to "onclick"
+			a.onclick = function()
+			{
+				$('#myModal').modal('show');
+				return false;
+			}
+
+			a2.onclick = function()
+			{
+				$('#termsConditions').modal('show');
+				return false;
+			}
+		}
+		</script>
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+		<!-- <div class="preloader">
+															<div class="sk-spinner sk-spinner-rotating-plane"></div>
+		</div> -->
+		
+		<div id="header"></div>
+		<section>
+			<div class="divider-login">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="divider-des">
+								<p><br><br> <br> <br></p>
+								<h3 class="text-uppercase">La mejor manera de agendar y editar citas</h3>
+								<p>Fácil de usar, innovadora y accesible.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="login">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="wow bounceIn">
+							<h3 class="wow bounceIn">Acceder al sistema</h3>
+							<hr style="float: left;"/>
+							<div class="form-group col-xs-9">
+								<form class="form" method="post" action="#">
+									<input type="text" placeholder="Nombre de Usuario" class="form-control">
+									<input type="password" placeholder="Contraseña" class="form-control">
+									<div class="col-xs-6">
+										<!-- <label class="checkbox pull-left"> -->
+										<input type="checkbox" value="remember-me">
+										Mantener la sesión activa
+										<!-- </label> -->
+									</div>
+									<div class="col-xs-6">
+										<small>
+										<a id="mylink" href="" style="float:right;">¿Olvidó su contraseña?</a>
+										</small>
+									</div>
+									<!-- <div class="col-xs-6"> -->
+									<!-- <label class="checkbox pull-left"> -->
+									<input type="submit" value="Acceder" class="form-control">
+									<div style="padding-top:40px;">
+										<hr style=" float: left;width: 60%;"/>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="sign_up_form" class="col-sm-6">
+						<div class="wow bounceIn">
+							<h3 class="wow bounceIn text-right">Registro</h3>
+							<hr style="float: right;"/>
+							<div class="form-group col-xs-12">
+								<p>Bienvenido al Sistema de Gestión Hospitalaria, tras completar el siguiente proceso de registro, podrá disfrutar de una nueva experiencia como paciente en el sistema de salud, reduciendo su tiempo de espera e incrementando la interacción directa con el médico de su preferencia.<br></p>
+								<form id="sign_up" class="form" method="post" action="#">
+									<div class="col-xs-6">
+										<input type="text" placeholder="Nombre" class="form-control">
+									</div>
+									<div class="col-xs-6">
+										<input type="text" placeholder="Apellido" class="form-control">
+									</div>
+									<div class="col-xs-12">
+										<input type="email" placeholder="Dirección e-mail" class="form-control">
+									</div>
+									<!-- TODO: Realizar verificación de existencia y disponiblidad → Verificar Regex -->
+									<div class="col-xs-6">
+										<input type="text" placeholder="Nombre de Usuario" class="form-control">
+									</div>
+									<div class="col-xs-6">
+										<input type="password" placeholder="Contraseña" class="form-control">
+									</div>
+									<div class="col-xs-12">
+										<p>Ṕor favor, escoger una pregunta de seguridad:</p>
+										<select name="" id="secret_answer" class="form-control" form="sign_up">
+											<option value="pediatria">Q1</option>
+											<option value="saab">Q2</option>
+											<option value="mercedes">Q3</option>
+											<option value="audi">Q4</option>
+										</select>
+									</div>
+									<div class="col-xs-12">
+										<input type="text" placeholder="Respuesta de seguridad" class="form-control">
+									</div>
+									<div class="col-xs-12">
+										<p>Con el fin de hacer uso de SGH, deberá comprender y aceptar los <a id="tac">Términos y condiciones</a> dispuestos por la aplicación y la institución.</p>
+									</div>
+									<div class="col-xs-12" style="padding-bottom:30px;">
+										<input type="checkbox" value="remember-me">Acepto los Términos y Condiciones
+									</div>
+									
+									<!-- </label> -->
+									<!-- </div> -->
+									<!-- <div class="col-xs-6"> -->
+									<!-- </div> -->
+									<!-- <div class="col-xs-6"> -->
+									<!-- <label class="checkbox pull-left"> -->
+									<div class="col-xs-12">
+										<input type="submit" value="Registrarse" class="form-control">
+										<div style="padding-top:40px;">
+											<hr style=" float: left;width: 60%;"/>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Modal Window -->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Recuperación de Contraseña</h4>
+					</div>
+					<div class="modal-body">
+						<p>Some text in the modal.</p>
+					</div>
+					<div class="form-group col-xs-9">
+						<form class="form" method="post" action="#">
+							<input type="text" placeholder="Nombre de Usuario" class="form-control">
+							<input type="password" placeholder="Contraseña" class="form-control">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="form-control" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="termsConditions" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Términos y Condiciones SGH</h4>
+					</div>
+					<div class="modal-body">
+						<p>Some text in the modal.</p>
+					</div>
+		            Lorem Ipsum sit dolor amet.
+					<div class="modal-footer">
+						<button type="button" class="form-control" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema de gestión Hospitalaria - Sesión de Paciente</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script>
+		$(function()
+		{
+			$("#header").load("main_files/header.html");
+			$("#footer").load("main_files/footer.html");
+		});
+		</script>
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+		<!-- <div class="preloader">
+				<div class="sk-spinner sk-spinner-rotating-plane"></div>
+		</div> -->
+		<div id="header"></div>
+		<section>
+			<div class="divider-login">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="divider-des">
+								<p><br><br> <br> <br></p>
+								<h1 class="text" style="text-align:center">Bienvenido al sistema de manejo de citas </h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- start service -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center wow bounceIn">
+						<h2>Servicios</h2>
+						<hr>
+						<h4>¡Porque nos importa su comodidad!</h4>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="media">
+								<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Agendar citas</h3>
+									<p>Aquí podrá agendar sus citas a partir de la especialidad que requiera, de manera fácil y rápida.</p>
+									<button  class="btn1 btn-default text-uppercase" onclick="location.href='pedirCita.html';">Agendar cita</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="media">
+								<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Editar citas</h3>
+									<p>También podrá cancelar las citas que tiene programadas.</p>
+									<button class="btn1 btn-default text-uppercase" onclick="location.href='pedirCita.html';">Cancelar cita</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="media">
+								<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Historial de citas</h3>
+									<p>Podrá ver su historial de citas y su médico tratante.</p>
+									<button class="btn1 btn-default text-uppercase" onclick="location.href='historialCitas.html';">Ver historial</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="media">
+								<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<div class="media-body">
+									<h3 class="media-heading">Buzón de mensajes</h3>
+									<p>Aquí podra ver los mensajes que le envíe su médico y contestarle; Cambio de hora de citas y cancelaciones</p>
+									<button class="btn1 btn-default text-uppercase" onclick="location.href='buzonPaciente.html';">Ver buzón</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="footer"></div>
+	</body>
+</html>
