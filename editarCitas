@@ -87,9 +87,9 @@
 						<hr>
 						<select name="" id="input" class="form-control">
 							<option value="pediatria">Pediatría</option>
-							  	<option value="saab">Saab</option>
-							  	<option value="mercedes">Mercedes</option>
-							  	<option value="audi">Audi</option>
+							  	<option value="oncologia">Oncología</option>
+							  	<option value="reumatologia">Reumatología</option>
+							  	<option value="ortopedia">Ortopedia</option>
 						</select>
 					</div>					
 					<form action="#" method="post" role="form">
